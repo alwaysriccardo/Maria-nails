@@ -85,12 +85,12 @@ iconify-icon { display: inline-block; vertical-align: middle; }
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs tracking-wide uppercase font-medium opacity-70 gap-2 md:gap-0">
             <span class="flex items-center gap-2">
                 <iconify-icon icon="solar:medal-ribbon-linear" width="14" height="14"></iconify-icon>
-                Calitate Premium &amp; Igienă Strictă
+                <span data-ro="Calitate Premium &amp; Igienă Strictă" data-ru="Премиум качество &amp; Строгая гигиена">Calitate Premium &amp; Igienă Strictă</span>
             </span>
             <div class="flex gap-4 md:gap-6 flex-wrap justify-center">
                 <span class="flex items-center gap-1.5">
                     <iconify-icon icon="solar:map-point-linear" width="14" height="14"></iconify-icon> 
-                    Shopping MallDova, Parter (Gloss Beauty Studio)
+                    Shopping MallDova, Nivelul -1 (Gloss Beauty Studio)
                 </span>
                 <span class="flex items-center gap-1.5">
                     <iconify-icon icon="solar:phone-calling-linear" width="14" height="14" class=""></iconify-icon> 
@@ -108,14 +108,19 @@ iconify-icon { display: inline-block; vertical-align: middle; }
             </div>
             
             <div class="hidden md:flex gap-8 text-sm font-medium text-burgundy-800/80 tracking-wide gap-x-8 gap-y-8 items-center">
-    <a href="#philosophy" class="hover:text-accent-500 transition-colors">Despre Noi</a>
-    <a href="#services" class="hover:text-accent-500 transition-colors">Servicii</a>
-    <a href="#gallery" class="hover:text-accent-500 transition-colors">Portofoliu</a>
-    <a href="#products" class="hover:text-accent-500 transition-colors">Produse Top</a>
+    <a href="#philosophy" class="hover:text-accent-500 transition-colors" data-ro="Despre Noi" data-ru="О нас">Despre Noi</a>
+    <a href="#services" class="hover:text-accent-500 transition-colors" data-ro="Servicii" data-ru="Услуги">Servicii</a>
+    <a href="#gallery" class="hover:text-accent-500 transition-colors" data-ro="Portofoliu" data-ru="Портфолио">Portofoliu</a>
+    <a href="#products" class="hover:text-accent-500 transition-colors" data-ro="Produse Top" data-ru="Топ продукты">Produse Top</a>
 </div>
 
-            <button onclick="document.getElementById('book').scrollIntoView()" class="bg-accent-500 hover:bg-burgundy-800 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg shadow-accent-500/20 group">
-                Programare 
+            <div class="hidden md:flex items-center gap-1 border border-burgundy-800/15 rounded-full px-1 py-1 text-xs font-bold uppercase tracking-wider">
+                <button id="lang-ro" onclick="setLang('ro')" class="px-3 py-1 rounded-full transition-all bg-burgundy-800 text-white">RO</button>
+                <button id="lang-ru" onclick="setLang('ru')" class="px-3 py-1 rounded-full transition-all text-burgundy-800/50 hover:text-burgundy-800">RU</button>
+            </div>
+
+            <button onclick="document.getElementById('book').scrollIntoView()" class="bg-accent-500 hover:bg-burgundy-800 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg shadow-accent-500/20 group" data-ro="Programare" data-ru="Записаться">
+                Programare
                 <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="transition-transform group-hover:translate-x-1"></iconify-icon>
             </button>
         </div>
@@ -128,28 +133,28 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                 <!-- Specialized Badge -->
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-burgundy-900/5 border border-burgundy-900/10 rounded-full text-burgundy-900 text-[10px] uppercase tracking-widest font-semibold mb-6">
                     <iconify-icon icon="solar:stars-minimalistic-linear" class="text-accent-500" width="14" height="14"></iconify-icon>
-                    Unghii • Epilare • Sprâncene
+                    <span data-ro="Unghii • Epilare • Sprâncene" data-ru="Ногти • Эпиляция • Брови">Unghii • Epilare • Sprâncene</span>
                 </div>
 
                 <h1 class="font-serif text-6xl md:text-8xl leading-[1.05] tracking-tight mb-6 text-burgundy-900">
-                    Eleganță la <br>
-                    <span class="text-accent-500 italic font-light">Superlativ.</span>
+                    <span data-ro="Eleganță la" data-ru="Элегантность на">Eleganță la</span> <br>
+                    <span class="text-accent-500 italic font-light" data-ro="Superlativ." data-ru="Высшем уровне.">Superlativ.</span>
                 </h1>
                 
                 <p class="text-burgundy-800/70 text-base md:text-lg mb-8 leading-relaxed max-w-lg">
-                    Nu este doar despre estetică. Este despre cum te simți când ieși din salon. De la <span class="font-semibold text-burgundy-900">manichiură impecabilă</span> la tratamente pentru piele, îți oferim o experiență completă.
+                    <span data-ro="Nu este doar despre estetică. Este despre cum te simți când ieși din salon. De la " data-ru="Это не только об эстетике. Это о том, как вы себя чувствуете, выходя из салона. От ">Nu este doar despre estetică. Este despre cum te simți când ieși din salon. De la </span><span class="font-semibold text-burgundy-900" data-ro="manichiură impecabilă" data-ru="безупречного маникюра">manichiură impecabilă</span><span data-ro=" la tratamente pentru piele, îți oferim o experiență completă." data-ru=" до ухода за кожей — полный опыт для вас."> la tratamente pentru piele, îți oferim o experiență completă.</span>
                 </p>
 
                 <!-- Retention Claim -->
                 <div class="flex flex-col sm:flex-row gap-4">
                     <button onclick="document.getElementById('services').scrollIntoView()" class="bg-burgundy-800 text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-accent-500 transition-colors duration-300 shadow-xl flex items-center justify-center gap-2">
-                        Vezi Lista de Prețuri
+                        <span data-ro="Vezi Lista de Prețuri" data-ru="Посмотреть услуги">Vezi Lista de Prețuri</span>
                         <iconify-icon icon="solar:arrow-down-linear" width="18" height="18"></iconify-icon>
                     </button>
                     <!-- Appointment Badge -->
                     <div class="flex items-center justify-center gap-2 px-6 py-3 border border-burgundy-200 bg-white/50 rounded-full text-xs uppercase tracking-wider font-semibold text-burgundy-900">
                         <iconify-icon icon="solar:map-point-linear" width="18" height="18"></iconify-icon>
-                        Shopping MallDova, Parter
+                        Shopping MallDova, Nivelul -1
                     </div>
                 </div>
             </div>
@@ -161,9 +166,9 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-lg max-w-[190px] border border-nude-300">
                         <div class="flex items-center gap-1.5 mb-1.5">
                             <iconify-icon icon="solar:verified-check-linear" class="text-accent-500" width="16" height="16"></iconify-icon>
-                            <span class="text-[9px] uppercase tracking-widest font-bold">Promisiunea Noastră</span>
+                            <span class="text-[9px] uppercase tracking-widest font-bold" data-ro="Promisiunea Noastră" data-ru="Наше обещание">Promisiunea Noastră</span>
                         </div>
-                        <p class="font-serif italic text-burgundy-900 text-xs leading-snug">"Rezultate impecabile, igienă strictă și o experiență de neuitat."</p>
+                        <p class="font-serif italic text-burgundy-900 text-xs leading-snug" data-ro='"Rezultate impecabile, igienă strictă și o experiență de neuitat."' data-ru='"Безупречные результаты, строгая гигиена и незабываемый опыт."'>"Rezultate impecabile, igienă strictă și o experiență de neuitat."</p>
                     </div>
                 </div>
                 <!-- Decorative Circle -->
@@ -181,32 +186,32 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="w-12 h-12 rounded-full bg-nude-100 flex items-center justify-center mb-4 text-accent-500 border border-nude-200">
                         <iconify-icon icon="solar:shield-check-linear" width="24" height="24"></iconify-icon>
                     </div>
-                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2">Sterilizare 100%</h3>
-                    <p class="text-sm text-burgundy-800/60 leading-relaxed">Instrumente sterilizate medical pentru fiecare client. Sănătatea ta este prioritară.</p>
+                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2" data-ro="Sterilizare 100%" data-ru="100% Стерилизация">Sterilizare 100%</h3>
+                    <p class="text-sm text-burgundy-800/60 leading-relaxed" data-ro="Instrumente sterilizate medical pentru fiecare client. Sănătatea ta este prioritară." data-ru="Медицински стерилизованные инструменты для каждого клиента. Ваше здоровье — приоритет.">Instrumente sterilizate medical pentru fiecare client. Sănătatea ta este prioritară.</p>
                 </div>
                 <!-- Trust Item 2 -->
                 <div class="reveal-element delay-100 flex flex-col items-center md:items-start text-center md:text-left in-view">
                     <div class="w-12 h-12 rounded-full bg-nude-100 flex items-center justify-center mb-4 text-accent-500 border border-nude-200">
                         <iconify-icon icon="solar:cosmetic-linear" width="24" height="24" class=""></iconify-icon>
                     </div>
-                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2">Produse Premium</h3>
-                    <p class="text-sm text-burgundy-800/60 leading-relaxed">Folosim exclusiv branduri profesionale certificate pentru siguranța ta.</p>
+                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2" data-ro="Produse Premium" data-ru="Премиум продукты">Produse Premium</h3>
+                    <p class="text-sm text-burgundy-800/60 leading-relaxed" data-ro="Folosesc exclusiv branduri profesionale certificate pentru siguranța ta." data-ru="Использую исключительно сертифицированные профессиональные бренды для вашей безопасности.">Folosesc exclusiv branduri profesionale certificate pentru siguranța ta.</p>
                 </div>
                 <!-- Trust Item 3 -->
                 <div class="reveal-element delay-200 flex flex-col items-center md:items-start text-center md:text-left in-view">
                     <div class="w-12 h-12 rounded-full bg-nude-100 flex items-center justify-center mb-4 text-accent-500 border border-nude-200">
                         <iconify-icon icon="solar:map-point-linear" width="24" height="24"></iconify-icon>
                     </div>
-                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2">Locație de Top</h3>
-                    <p class="text-sm text-burgundy-800/60 leading-relaxed">Te așteptăm în incinta Gloss Beauty Studio, la parter în Shopping MallDova.</p>
+                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2" data-ro="Locație de Top" data-ru="Топ локация">Locație de Top</h3>
+                    <p class="text-sm text-burgundy-800/60 leading-relaxed" data-ro="Te așteptăm în incinta Gloss Beauty Studio, la nivelul -1 în Shopping MallDova." data-ru="Ждём вас в Gloss Beauty Studio, на уровне -1 Shopping MallDova.">Te așteptăm în incinta Gloss Beauty Studio, la nivelul -1 în Shopping MallDova.</p>
                 </div>
                 <!-- Trust Item 4 -->
                 <div class="reveal-element delay-300 flex flex-col items-center md:items-start text-center md:text-left in-view">
                     <div class="w-12 h-12 rounded-full bg-nude-100 flex items-center justify-center mb-4 text-accent-500 border border-nude-200">
                         <iconify-icon icon="solar:stars-linear" width="24" height="24"></iconify-icon>
                     </div>
-                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2">Servicii Complete</h3>
-                    <p class="text-sm text-burgundy-800/60 leading-relaxed">Manichiură, pedichiură tratament, epilare și stilizare sprâncene într-un singur loc.</p>
+                    <h3 class="font-serif text-lg text-burgundy-900 font-medium mb-2" data-ro="Servicii Complete" data-ru="Полный спектр услуг">Servicii Complete</h3>
+                    <p class="text-sm text-burgundy-800/60 leading-relaxed" data-ro="Manichiură, pedichiură tratament, epilare și stilizare sprâncene într-un singur loc." data-ru="Маникюр, лечебный педикюр, эпиляция и оформление бровей в одном месте.">Manichiură, pedichiură tratament, epilare și stilizare sprâncene într-un singur loc.</p>
                 </div>
             </div>
         </div>
@@ -216,8 +221,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <section id="philosophy" class="py-24 px-6 bg-nude-100">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 reveal-element in-view">
-                <h2 class="font-serif text-4xl md:text-5xl tracking-tight mb-4 text-burgundy-900">Meriți servicii de <span class="italic text-accent-500">calitate</span></h2>
-                <p class="text-burgundy-800/60 max-w-lg mx-auto">Fără compromisuri când vine vorba de frumusețea și sănătatea ta.</p>
+                <h2 class="font-serif text-4xl md:text-5xl tracking-tight mb-4 text-burgundy-900"><span data-ro="Meriți servicii de" data-ru="Вы заслуживаете">Meriți servicii de</span> <span class="italic text-accent-500" data-ro="calitate" data-ru="качественных услуг">calitate</span></h2>
+                <p class="text-burgundy-800/60 max-w-lg mx-auto" data-ro="Fără compromisuri când vine vorba de frumusețea și sănătatea ta." data-ru="Никаких компромиссов в вопросах вашей красоты и здоровья.">Fără compromisuri când vine vorba de frumusețea și sănătatea ta.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
@@ -227,8 +232,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1629946832022-c327f74956e0?w=2160&amp;q=80')] bg-cover bg-center opacity-10 grayscale"></div>
                     
                     <div class="relative z-10">
-                        <h3 class="font-serif text-2xl mb-6 text-burgundy-900">Probleme Frecvente</h3>
-                        <p class="text-sm text-burgundy-800/60 mb-8">Îți sună familiar? Plătești preț întreg, dar primești...</p>
+                        <h3 class="font-serif text-2xl mb-6 text-burgundy-900" data-ro="Probleme Frecvente" data-ru="Частые проблемы">Probleme Frecvente</h3>
+                        <p class="text-sm text-burgundy-800/60 mb-8" data-ro="Îți sună familiar? Plătești preț întreg, dar primești..." data-ru="Звучит знакомо? Платите полную цену, но получаете...">Îți sună familiar? Plătești preț întreg, dar primești...</p>
                         
                         <ul class="space-y-6">
                             <li class="flex items-start gap-4">
@@ -236,8 +241,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                                     <iconify-icon icon="solar:close-circle-linear" width="20" height="20"></iconify-icon>
                                 </div>
                                 <div class="">
-                                    <h4 class="font-medium text-burgundy-900">Gel care cedează rapid.</h4>
-                                    <p class="text-xs text-burgundy-800/50 mt-1">Materiale ieftine care se exfoliază sau unghii care se rup la doar câteva zile după aplicare.</p>
+                                    <h4 class="font-medium text-burgundy-900" data-ro="Gel care cedează rapid." data-ru="Гель, который быстро отслаивается.">Gel care cedează rapid.</h4>
+                                    <p class="text-xs text-burgundy-800/50 mt-1" data-ro="Materiale ieftine care se exfoliază sau unghii care se rup la doar câteva zile după aplicare." data-ru="Дешёвые материалы, которые отслаиваются, или ногти, ломающиеся через несколько дней после нанесения.">Materiale ieftine care se exfoliază sau unghii care se rup la doar câteva zile după aplicare.</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-4">
@@ -245,8 +250,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                                     <iconify-icon icon="solar:close-circle-linear" width="20" height="20"></iconify-icon>
                                 </div>
                                 <div class="">
-                                    <h4 class="font-medium text-burgundy-900">Pedichiură ineficientă.</h4>
-                                    <p class="text-xs text-burgundy-800/50 mt-1">Călcâie aspre și tratamente superficiale care nu rezolvă problema pe termen lung.</p>
+                                    <h4 class="font-medium text-burgundy-900" data-ro="Pedichiură ineficientă." data-ru="Неэффективный педикюр.">Pedichiură ineficientă.</h4>
+                                    <p class="text-xs text-burgundy-800/50 mt-1" data-ro="Călcâie aspre și tratamente superficiale care nu rezolvă problema pe termen lung." data-ru="Грубые пятки и поверхностные процедуры, не решающие проблему надолго.">Călcâie aspre și tratamente superficiale care nu rezolvă problema pe termen lung.</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-4">
@@ -254,8 +259,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                                     <iconify-icon icon="solar:close-circle-linear" width="20" height="20"></iconify-icon>
                                 </div>
                                 <div class="">
-                                    <h4 class="font-medium text-burgundy-900">Lipsa de igienă.</h4>
-                                    <p class="text-xs text-burgundy-800/50 mt-1">Instrumentar nesterilizat corespunzător, punându-ți în pericol sănătatea unghiilor și a pielii.</p>
+                                    <h4 class="font-medium text-burgundy-900" data-ro="Lipsa de igienă." data-ru="Отсутствие гигиены.">Lipsa de igienă.</h4>
+                                    <p class="text-xs text-burgundy-800/50 mt-1" data-ro="Instrumentar nesterilizat corespunzător, punându-ți în pericol sănătatea unghiilor și a pielii." data-ru="Ненадлежащая стерилизация инструментов, угрожающая здоровью ваших ногтей и кожи.">Instrumentar nesterilizat corespunzător, punându-ți în pericol sănătatea unghiilor și a pielii.</p>
                                 </div>
                             </li>
                         </ul>
@@ -264,9 +269,9 @@ iconify-icon { display: inline-block; vertical-align: middle; }
 
                 <!-- The Solution (USP) -->
                 <div class="reveal-element delay-200 pl-0 md:pl-4 in-view">
-                    <h3 class="font-serif text-3xl mb-6 text-burgundy-900">Standardul <span class="shimmer-name">Maria</span></h3>
+                    <h3 class="font-serif text-3xl mb-6 text-burgundy-900"><span data-ro="Standardul " data-ru="Стандарт ">Standardul </span><span class="shimmer-name">Maria</span></h3>
                     <p class="text-burgundy-800 mb-8 text-lg leading-relaxed">
-                        Fiecare detaliu contează. Alocăm <span class="font-semibold text-accent-500">timpul necesar</span> pentru o pregătire meticuloasă, secretul rezistenței și calității.
+                        <span data-ro="Fiecare detaliu contează. Alocăm " data-ru="Каждая деталь имеет значение. Мы уделяем ">Fiecare detaliu contează. Alocăm </span><span class="font-semibold text-accent-500" data-ro="timpul necesar" data-ru="необходимое время">timpul necesar</span><span data-ro=" pentru o pregătire meticuloasă, secretul rezistenței și calității." data-ru=" тщательной подготовке — секрет стойкости и качества."> pentru o pregătire meticuloasă, secretul rezistenței și calității.</span>
                     </p>
                     
                     <div class="space-y-8">
@@ -277,7 +282,7 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                             </div>
                             <div class="">
                                 <h4 class="font-serif text-xl text-burgundy-900 mb-2">Luxio by Akzentz</h4>
-                                <p class="text-sm text-burgundy-800/70">Lucrăm cu geluri 100% pure, oferind o rezistență incredibilă, culori vibrante și protejând unghia naturală.</p>
+                                <p class="text-sm text-burgundy-800/70" data-ro="Lucrăm cu geluri 100% pure, oferind o rezistență incredibilă, culori vibrante și protejând unghia naturală." data-ru="Работаем с 100% чистыми гелями, обеспечивая невероятную стойкость, яркие цвета и защищая натуральный ноготь.">Lucrăm cu geluri 100% pure, oferind o rezistență incredibilă, culori vibrante și protejând unghia naturală.</p>
                             </div>
                         </div>
 
@@ -288,7 +293,7 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                             </div>
                             <div class="">
                                 <h4 class="font-serif text-xl text-burgundy-900 mb-2">Tratament KART</h4>
-                                <p class="text-sm text-burgundy-800/70">Cea mai avansată soluție pentru restabilirea sănătății picioarelor și hidratarea profundă a călcâielor.</p>
+                                <p class="text-sm text-burgundy-800/70" data-ro="Cea mai avansată soluție pentru restabilirea sănătății picioarelor și hidratarea profundă a călcâielor." data-ru="Самое передовое решение для восстановления здоровья стоп и глубокого увлажнения пяток.">Cea mai avansată soluție pentru restabilirea sănătății picioarelor și hidratarea profundă a călcâielor.</p>
                             </div>
                         </div>
                         
@@ -298,8 +303,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                                 <iconify-icon icon="solar:heart-angle-linear" width="24" height="24"></iconify-icon>
                             </div>
                             <div class="">
-                                <h4 class="font-serif text-xl text-burgundy-900 mb-2">Experiență Premium</h4>
-                                <p class="text-sm text-burgundy-800/70">O atmosferă relaxantă în cadrul Gloss Beauty Studio. Fără grabă, doar răsfăț pur.</p>
+                                <h4 class="font-serif text-xl text-burgundy-900 mb-2" data-ro="Experiență Premium" data-ru="Премиум опыт">Experiență Premium</h4>
+                                <p class="text-sm text-burgundy-800/70" data-ro="O atmosferă relaxantă în cadrul Gloss Beauty Studio. Fără grabă, doar răsfăț pur." data-ru="Расслабляющая атмосфера в Gloss Beauty Studio. Без спешки — только чистое удовольствие.">O atmosferă relaxantă în cadrul Gloss Beauty Studio. Fără grabă, doar răsfăț pur.</p>
                             </div>
                         </div>
                     </div>
@@ -312,8 +317,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <section class="py-20 px-6 bg-burgundy-900 text-nude-100">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 reveal-element">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-2 block">Simplu și Rapid</span>
-                <h2 class="font-serif text-3xl md:text-4xl tracking-tight">Cum Funcționează</h2>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-2 block" data-ro="Simplu și Rapid" data-ru="Просто и Быстро">Simplu și Rapid</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight" data-ro="Cum Funcționează" data-ru="Как это работает">Cum Funcționează</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
@@ -325,8 +330,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="w-24 h-24 rounded-full bg-burgundy-800 border border-white/10 flex items-center justify-center mb-6 shadow-xl">
                         <span class="font-serif text-3xl italic">1</span>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Alege Serviciul</h3>
-                    <p class="text-sm opacity-60 max-w-[200px]">Consultă lista de prețuri pentru manichiură, epilare sau sprâncene.</p>
+                    <h3 class="text-lg font-semibold mb-2" data-ro="Alege Serviciul" data-ru="Выберите услугу">Alege Serviciul</h3>
+                    <p class="text-sm opacity-60 max-w-[200px]" data-ro="Consultă lista de prețuri pentru manichiură, epilare sau sprâncene." data-ru="Ознакомьтесь с прейскурантом на маникюр, эпиляцию или брови.">Consultă lista de prețuri pentru manichiură, epilare sau sprâncene.</p>
                 </div>
 
                 <!-- Step 2 -->
@@ -334,8 +339,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="w-24 h-24 rounded-full bg-accent-600 border border-white/10 flex items-center justify-center mb-6 shadow-xl ring-4 ring-accent-500/20">
                         <iconify-icon icon="solar:phone-calling-linear" width="32" height="32"></iconify-icon>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Contactează-mă</h3>
-                    <p class="text-sm opacity-60 max-w-[200px]">Sună sau trimite un mesaj la numărul +373 692 41 950.</p>
+                    <h3 class="text-lg font-semibold mb-2" data-ro="Contactează-mă" data-ru="Свяжитесь со мной">Contactează-mă</h3>
+                    <p class="text-sm opacity-60 max-w-[200px]" data-ro="Sună sau trimite un mesaj la numărul +373 692 41 950." data-ru="Позвоните или напишите по номеру +373 692 41 950.">Sună sau trimite un mesaj la numărul +373 692 41 950.</p>
                 </div>
 
                 <!-- Step 3 -->
@@ -343,8 +348,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="w-24 h-24 rounded-full bg-burgundy-800 border border-white/10 flex items-center justify-center mb-6 shadow-xl">
                         <span class="font-serif text-3xl italic">3</span>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Confirmarea</h3>
-                    <p class="text-sm opacity-60 max-w-[200px]">Te aștept la Shopping MallDova pentru momentul tău de relaxare.</p>
+                    <h3 class="text-lg font-semibold mb-2" data-ro="Confirmarea" data-ru="Подтверждение">Confirmarea</h3>
+                    <p class="text-sm opacity-60 max-w-[200px]" data-ro="Te aștept la Shopping MallDova pentru momentul tău de relaxare." data-ru="Жду вас в Shopping MallDova для вашего момента отдыха.">Te aștept la Shopping MallDova pentru momentul tău de relaxare.</p>
                 </div>
             </div>
         </div>
@@ -354,9 +359,9 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <section id="services" class="py-24 px-6 bg-nude-200/40 relative">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16 reveal-element">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block">Serviciile Noastre</span>
-                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900">Ce oferim</h2>
-                <p class="mt-4 text-burgundy-800/60">Contactează-mă pentru detalii și disponibilitate.</p>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block" data-ro="Serviciile Mele" data-ru="Serviciile Mele">Serviciile Mele</span>
+                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900" data-ro="Ce ofer" data-ru="Ce ofer">Ce ofer</h2>
+                <p class="mt-4 text-burgundy-800/60" data-ro="Contactează-mă pentru detalii și disponibilitate." data-ru="Свяжитесь со мной для уточнения деталей.">Contactează-mă pentru detalii și disponibilitate.</p>
             </div>
 
             <div class="grid gap-8">
@@ -367,20 +372,20 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="bg-white p-8 rounded-xl shadow-sm border border-burgundy-800/5">
                         <h3 class="font-serif text-xl mb-6 flex items-center gap-2">
                             <iconify-icon icon="solar:stars-minimalistic-linear" class="text-burgundy-800" width="20" height="20"></iconify-icon>
-                            Întreținere Unghii
+                            <span data-ro="Întreținere Unghii" data-ru="Уход за ногтями">Întreținere Unghii</span>
                         </h3>
                         <ul class="space-y-4">
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-2">
-                                <span class="text-sm font-medium text-burgundy-900">Manichiură Clasică</span>
-                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Manichiură Clasică" data-ru="Классический маникюр">Manichiură Clasică</span>
+                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-2">
-                                <span class="text-sm font-medium text-burgundy-900">Acoperire Gel / Oja Semi</span>
-                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Acoperire Gel / Oja Semi" data-ru="Гель / Полупermanent лак">Acoperire Gel / Oja Semi</span>
+                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-2">
-                                <span class="text-sm font-medium text-burgundy-900">Corecție Gel</span>
-                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Corecție Gel" data-ru="Коррекция геля">Corecție Gel</span>
+                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                         </ul>
                     </div>
@@ -389,16 +394,16 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     <div class="bg-white p-8 rounded-xl shadow-sm border border-burgundy-800/5">
                         <h3 class="font-serif text-xl mb-6 flex items-center gap-2">
                             <iconify-icon icon="solar:leaf-linear" class="text-burgundy-800" width="20" height="20"></iconify-icon>
-                            Pedichiură
+                            <span data-ro="Pedichiură" data-ru="Педикюр">Pedichiură</span>
                         </h3>
                         <ul class="space-y-4">
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-2">
-                                <span class="text-sm font-medium text-burgundy-900">Pedichiură Estetică</span>
-                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Pedichiură Estetică" data-ru="Эстетический педикюр">Pedichiură Estetică</span>
+                                <a href="tel:+37369241950" class="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="pt-2 text-xs text-burgundy-800/50 italic flex gap-2 items-start">
-                                <iconify-icon icon="solar:info-circle-linear" class="mt-0.5 text-accent-500" width="14" height="14"></iconify-icon> 
-                                Se utilizează linia premium KART pentru cele mai fine călcâie, fără tăiere agresivă.
+                                <iconify-icon icon="solar:info-circle-linear" class="mt-0.5 text-accent-500" width="14" height="14"></iconify-icon>
+                                <span data-ro="Se utilizează linia premium KART pentru cele mai fine călcâie, fără tăiere agresivă." data-ru="Используется премиум-линия KART для нежнейших пяток, без агрессивного срезания.">Se utilizează linia premium KART pentru cele mai fine călcâie, fără tăiere agresivă.</span>
                             </li>
                         </ul>
                     </div>
@@ -412,27 +417,27 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                         <div class="flex flex-col mb-6">
                             <h3 class="font-serif text-xl flex items-center gap-2 mb-1">
                                 <iconify-icon icon="solar:gem-linear" class="text-burgundy-800" width="20" height="20"></iconify-icon>
-                                Extensii / Construcție Gel
+                                <span data-ro="Extensii / Construcție Gel" data-ru="Наращивание / Гелевые ногти">Extensii / Construcție Gel</span>
                             </h3>
-                            <span class="text-xs text-burgundy-800/50 uppercase tracking-wider">Durabilitate &amp; Eleganță</span>
+                            <span class="text-xs text-burgundy-800/50 uppercase tracking-wider" data-ro="Durabilitate &amp; Eleganță" data-ru="Стойкость &amp; Элегантность">Durabilitate &amp; Eleganță</span>
                         </div>
                         
                         <ul class="space-y-3">
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-3">
-                                <span class="text-sm font-medium text-burgundy-900">Scurt (1-2)</span>
-                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Scurt (1-2)" data-ru="Короткие (1-2)">Scurt (1-2)</span>
+                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-3">
-                                <span class="text-sm font-medium text-burgundy-900">Mediu (3-4)</span>
-                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Mediu (3-4)" data-ru="Средние (3-4)">Mediu (3-4)</span>
+                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="flex justify-between items-center border-b border-dashed border-burgundy-800/10 pb-3">
-                                <span class="text-sm font-medium text-burgundy-900">Lung (5-6)</span>
-                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Lung (5-6)" data-ru="Длинные (5-6)">Lung (5-6)</span>
+                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                             <li class="flex justify-between items-center">
-                                <span class="text-sm font-medium text-burgundy-900">Extrem</span>
-                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                                <span class="text-sm font-medium text-burgundy-900" data-ro="Extrem" data-ru="Экстремальные">Extrem</span>
+                                <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                             </li>
                         </ul>
                     </div>
@@ -444,38 +449,38 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                         <div class="flex flex-col mb-6 relative z-10">
                             <h3 class="font-serif text-xl flex items-center gap-2 mb-1 text-white">
                                 <iconify-icon icon="solar:magic-stick-3-linear" class="text-accent-500" width="20" height="20"></iconify-icon>
-                                Epilare &amp; Sprâncene
+                                <span data-ro="Epilare &amp; Sprâncene" data-ru="Эпиляция &amp; Брови">Epilare &amp; Sprâncene</span>
                             </h3>
-                            <span class="text-xs text-white/50 uppercase tracking-wider">Îngrijire &amp; Finisaje</span>
+                            <span class="text-xs text-white/50 uppercase tracking-wider" data-ro="Îngrijire &amp; Finisaje" data-ru="Уход &amp; Финишная обработка">Îngrijire &amp; Finisaje</span>
                         </div>
                         
                         <table class="w-full text-left relative z-10">
                             <thead class="">
                                 <tr class="border-b-2 border-white/10 text-[10px] uppercase tracking-wider text-white/40">
-                                    <th class="pb-3 font-semibold pl-1">Serviciu / Zonă</th>
-                                    <th class="pb-3 font-semibold text-right pr-1">Preț</th>
+                                    <th class="pb-3 font-semibold pl-1" data-ro="Serviciu / Zonă" data-ru="Услуга / Зона">Serviciu / Zonă</th>
+                                    <th class="pb-3 font-semibold text-right pr-1" data-ro="Preț" data-ru="Цена">Preț</th>
                                 </tr>
                             </thead>
                             <tbody class="text-sm font-medium">
                                 <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
-                                    <td class="py-3 pl-1 text-white">Pensat / Stilizare Sprâncene</td>
-                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors">Contactează</a></td>
+                                    <td class="py-3 pl-1 text-white" data-ro="Pensat / Stilizare Sprâncene" data-ru="Коррекция / Оформление бровей">Pensat / Stilizare Sprâncene</td>
+                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a></td>
                                 </tr>
                                 <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
-                                    <td class="py-3 pl-1 text-white">Vopsit Sprâncene</td>
-                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors">Contactează</a></td>
+                                    <td class="py-3 pl-1 text-white" data-ro="Vopsit Sprâncene" data-ru="Окрашивание бровей">Vopsit Sprâncene</td>
+                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a></td>
                                 </tr>
                                 <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
-                                    <td class="py-3 pl-1 text-white">Epilare Mustață / Facial</td>
-                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors">Contactează</a></td>
+                                    <td class="py-3 pl-1 text-white" data-ro="Epilare Mustață / Facial" data-ru="Эпиляция усов / Лица">Epilare Mustață / Facial</td>
+                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a></td>
                                 </tr>
                                 <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
-                                    <td class="py-3 pl-1 text-white">Epilare Axilă</td>
-                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors">Contactează</a></td>
+                                    <td class="py-3 pl-1 text-white" data-ro="Epilare Axilă" data-ru="Эпиляция подмышек">Epilare Axilă</td>
+                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a></td>
                                 </tr>
                                 <tr class="hover:bg-white/5 transition-colors">
-                                    <td class="py-3 pl-1 text-white">Epilare Picioare Total</td>
-                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors">Contactează</a></td>
+                                    <td class="py-3 pl-1 text-white" data-ro="Epilare Picioare Total" data-ru="Эпиляция ног полностью">Epilare Picioare Total</td>
+                                    <td class="py-2 text-right pr-1"><a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-white hover:text-burgundy-900 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -487,15 +492,15 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal-element delay-300">
                      <div class="bg-nude-200/50 p-8 rounded-xl border border-nude-300">
                         <h4 class="font-serif text-lg mb-4 flex items-center gap-2">
-                            <iconify-icon icon="solar:eraser-linear" class="text-burgundy-800/60" width="18" height="18"></iconify-icon> Demontare
+                            <iconify-icon icon="solar:eraser-linear" class="text-burgundy-800/60" width="18" height="18"></iconify-icon> <span data-ro="Demontare" data-ru="Снятие">Demontare</span>
                         </h4>
                         <div class="flex justify-between items-center mb-3 pb-3 border-b border-burgundy-800/5">
-                            <span class="text-sm">Oja Semi / Gel (alta lucrare)</span>
-                            <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                            <span class="text-sm" data-ro="Oja Semi / Gel (alta lucrare)" data-ru="Полупermanent / Гель (чужая работа)">Oja Semi / Gel (alta lucrare)</span>
+                            <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-sm">Extensii (alta lucrare)</span>
-                            <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors">Contactează</a>
+                            <span class="text-sm" data-ro="Extensii (alta lucrare)" data-ru="Наращивание (чужая работа)">Extensii (alta lucrare)</span>
+                            <a href="tel:+37369241950" class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-accent-500 text-white hover:bg-burgundy-800 transition-colors" data-ro="Contactează" data-ru="Связаться">Contactează</a>
                         </div>
                      </div>
                 </div>
@@ -503,7 +508,7 @@ iconify-icon { display: inline-block; vertical-align: middle; }
             </div>
             
             <div class="text-center mt-12 reveal-element">
-                <button onclick="document.getElementById('book').scrollIntoView()" class="bg-burgundy-800 hover:bg-accent-500 text-white font-medium uppercase text-sm tracking-wider px-10 py-4 rounded-full transition-all duration-300 shadow-xl shadow-burgundy-800/20 transform hover:-translate-y-1">
+                <button onclick="document.getElementById('book').scrollIntoView()" class="bg-burgundy-800 hover:bg-accent-500 text-white font-medium uppercase text-sm tracking-wider px-10 py-4 rounded-full transition-all duration-300 shadow-xl shadow-burgundy-800/20 transform hover:-translate-y-1" data-ro="Solicită o Programare" data-ru="Записаться на приём">
                     Solicită o Programare
                 </button>
             </div>
@@ -516,36 +521,36 @@ iconify-icon { display: inline-block; vertical-align: middle; }
             <div class="text-center mb-16 reveal-element">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-accent-500/5 border border-accent-500/10 text-accent-600 text-[10px] font-semibold uppercase tracking-[0.2em] mb-4 shadow-sm hover:bg-accent-500/10 transition-colors cursor-default">
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
-    Portofoliu
+    <span data-ro="Portofoliu" data-ru="Портфолио">Portofoliu</span>
 </span>
-                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900">Arta la Detaliu</h2>
-                <p class="mt-4 text-burgundy-800/60">Câteva dintre lucrările noastre recente.</p>
+                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900" data-ro="Arta la Detaliu" data-ru="Искусство в деталях">Arta la Detaliu</h2>
+                <p class="mt-4 text-burgundy-800/60" data-ro="Câteva dintre lucrările mele recente." data-ru="Câteva dintre lucrările mele recente.">Câteva dintre lucrările mele recente.</p>
             </div>
 
             <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 gap-4 reveal-element delay-100">
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 1</span>
+                    <span class="text-sm font-medium" data-ro="Poza 1" data-ru="Фото 1">Poza 1</span>
                 </div>
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 2</span>
+                    <span class="text-sm font-medium" data-ro="Poza 2" data-ru="Фото 2">Poza 2</span>
                 </div>
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 3</span>
+                    <span class="text-sm font-medium" data-ro="Poza 3" data-ru="Фото 3">Poza 3</span>
                 </div>
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 4</span>
+                    <span class="text-sm font-medium" data-ro="Poza 4" data-ru="Фото 4">Poza 4</span>
                 </div>
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 5</span>
+                    <span class="text-sm font-medium" data-ro="Poza 5" data-ru="Фото 5">Poza 5</span>
                 </div>
                 <div class="rounded-xl aspect-square border-2 border-dashed border-burgundy-800/20 bg-nude-200/50 flex flex-col items-center justify-center gap-2 text-burgundy-800/40">
                     <iconify-icon icon="solar:gallery-add-linear" width="32" height="32"></iconify-icon>
-                    <span class="text-sm font-medium">Poza 6</span>
+                    <span class="text-sm font-medium" data-ro="Poza 6" data-ru="Фото 6">Poza 6</span>
                 </div>
             </div>
         </div>
@@ -561,22 +566,22 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                 </div>
             </div>
             <div class="order-1 md:order-2 reveal-element delay-100">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block">Experiența Ta</span>
-                <h2 class="font-serif text-4xl mb-6 text-burgundy-900">Cu Maria, pe mâini bune</h2>
-                <p class="text-burgundy-800/70 mb-8 leading-relaxed">
-                    Timpul tău este prețios. Fiecare vizită este gândită în jurul confortului și rezultatelor tale, într-un spațiu liniștit la parterul Shopping MallDova.
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block" data-ro="Experiența Ta" data-ru="Ваш опыт">Experiența Ta</span>
+                <h2 class="font-serif text-4xl mb-6 text-burgundy-900" data-ro="Cu Maria, pe mâini bune" data-ru="С Марией — в надёжных руках">Cu Maria, pe mâini bune</h2>
+                <p class="text-burgundy-800/70 mb-8 leading-relaxed" data-ro="Fiecare vizită este gândită în jurul confortului și rezultatelor tale, într-un spațiu liniștit la nivelul -1 al Shopping MallDova." data-ru="Каждый визит продуман с заботой о вашем комфорте и результате, в уютном пространстве на уровне -1 Shopping MallDova.">
+                    Timpul tău este prețios. Fiecare vizită este gândită în jurul confortului și rezultatelor tale, într-un spațiu liniștit la nivelul -1 al Shopping MallDova.
                 </p>
                 <ul class="space-y-4 mb-8">
                     <li class="flex items-center gap-3">
                         <iconify-icon icon="solar:cup-hot-linear" class="text-accent-500" width="20" height="20"></iconify-icon>
-                        <span class="font-medium">Cafea și Ceai din partea casei</span>
+                        <span class="font-medium" data-ro="Cafea și Ceai din partea casei" data-ru="Кофе и чай за счёт заведения">Cafea și Ceai din partea casei</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent-500 shrink-0">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path>
                         </svg>
-                        <span class="font-medium">Parcare accesibilă (Shopping MallDova)</span>
+                        <span class="font-medium" data-ro="Parcare accesibilă (Shopping MallDova)" data-ru="Удобная парковка (Shopping MallDova)">Parcare accesibilă (Shopping MallDova)</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent-500">
@@ -585,7 +590,7 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                             <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
                             <line x1="12" x2="12.01" y1="20" y2="20"></line>
                         </svg>
-                        <span class="font-medium">Conexiune Wi-Fi gratuită</span>
+                        <span class="font-medium" data-ro="Conexiune Wi-Fi gratuită" data-ru="Бесплатный Wi-Fi">Conexiune Wi-Fi gratuită</span>
                     </li>
                 </ul>
             </div>
@@ -596,9 +601,9 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <section class="bg-white border-nude-200 border-t pt-24 pr-6 pb-24 pl-6" id="products">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 reveal-element">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block">Produse Profesionale</span>
-                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900">Calitatea pe care o folosesc</h2>
-                <p class="mt-4 text-burgundy-800/60">Comercializez și utilizez exclusiv branduri de renume internațional pentru siguranța ta.</p>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-accent-500 mb-2 block" data-ro="Produse Profesionale" data-ru="Профессиональные продукты">Produse Profesionale</span>
+                <h2 class="font-serif text-4xl md:text-5xl tracking-tight text-burgundy-900" data-ro="Calitatea pe care o folosesc" data-ru="Качество, которое я использую">Calitatea pe care o folosesc</h2>
+                <p class="mt-4 text-burgundy-800/60" data-ro="Comercializez și utilizez exclusiv branduri de renume internațional pentru siguranța ta." data-ru="Использую исключительно бренды с международной репутацией для вашей безопасности.">Comercializez și utilizez exclusiv branduri de renume internațional pentru siguranța ta.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -608,14 +613,14 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                         <iconify-icon icon="solar:leaf-bold" width="24" height="24"></iconify-icon>
                     </div>
                     <p class="text-burgundy-800/80 mb-6 text-sm leading-relaxed">
-                        <strong class="text-burgundy-900 font-serif text-base block mb-2">Gehwol - Îngrijire Medicală</strong>
-                        Lider absolut în îngrijirea profesională a picioarelor. Produsele Gehwol pe care le folosesc și le recomand pentru acasă tratează și protejează, oferind soluții avansate pentru orice problemă a pielii sau a unghiilor.
+                        <strong class="text-burgundy-900 font-serif text-base block mb-2" data-ro="Gehwol - Îngrijire Medicală" data-ru="Gehwol - Медицинский уход">Gehwol - Îngrijire Medicală</strong>
+                        <span data-ro="Lider absolut în îngrijirea profesională a picioarelor. Produsele Gehwol pe care le folosesc și le recomand pentru acasă tratează și protejează, oferind soluții avansate pentru orice problemă a pielii sau a unghiilor." data-ru="Абсолютный лидер в профессиональном уходе за ногами. Продукты Gehwol, которые я использую и рекомендую для домашнего ухода, лечат и защищают, предлагая передовые решения для любых проблем кожи и ногтей.">Lider absolut în îngrijirea profesională a picioarelor. Produsele Gehwol pe care le folosesc și le recomand pentru acasă tratează și protejează, oferind soluții avansate pentru orice problemă a pielii sau a unghiilor.</span>
                     </p>
                     <div class="flex items-center gap-3">
                         <div class="flex font-bold text-accent-600 font-serif bg-nude-200 w-10 h-10 border border-nude-300 rounded-full items-center justify-center">G</div>
                         <div>
-                            <p class="text-sm font-semibold text-burgundy-900">Linia Gehwol</p>
-                            <p class="text-[10px] text-burgundy-800/50 uppercase">Îngrijire &amp; Tratament</p>
+                            <p class="text-sm font-semibold text-burgundy-900" data-ro="Linia Gehwol" data-ru="Линия Gehwol">Linia Gehwol</p>
+                            <p class="text-[10px] text-burgundy-800/50 uppercase" data-ro="Îngrijire &amp; Tratament" data-ru="Уход &amp; Лечение">Îngrijire &amp; Tratament</p>
                         </div>
                     </div>
                 </div>
@@ -627,13 +632,13 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     </div>
                     <p class="leading-relaxed text-sm text-burgundy-800/80 mb-6">
                         <strong class="text-burgundy-900 font-serif text-base block mb-2">Kart Cosmetics</strong>
-                        Acesta este cel mai bine vândut produs al meu. Tratamentul inovator Kart este secretul absolut pentru călcâie fine, profund hidratate și perfect sănătoase, eliminând necesitatea pilirii agresive a pielii.
+                        <span data-ro="Acesta este cel mai bine vândut produs al meu. Tratamentul inovator Kart este secretul absolut pentru călcâie fine, profund hidratate și perfect sănătoase, eliminând necesitatea pilirii agresive a pielii." data-ru="Это самый продаваемый мой продукт. Инновационное средство Kart — абсолютный секрет нежных, глубоко увлажнённых и здоровых пяток без агрессивного пилинга.">Acesta este cel mai bine vândut produs al meu. Tratamentul inovator Kart este secretul absolut pentru călcâie fine, profund hidratate și perfect sănătoase, eliminând necesitatea pilirii agresive a pielii.</span>
                     </p>
                     <div class="flex items-center gap-3">
                         <div class="flex font-bold text-accent-600 font-serif bg-nude-200 w-10 h-10 border border-nude-300 rounded-full items-center justify-center">K</div>
                         <div class="">
-                            <p class="text-sm font-semibold text-burgundy-900">Produse Kart</p>
-                            <p class="text-[10px] text-burgundy-800/50 uppercase">Best-Seller Călcâie</p>
+                            <p class="text-sm font-semibold text-burgundy-900" data-ro="Produse Kart" data-ru="Продукты Kart">Produse Kart</p>
+                            <p class="text-[10px] text-burgundy-800/50 uppercase" data-ro="Best-Seller Călcâie" data-ru="Бестселлер для пяток">Best-Seller Călcâie</p>
                         </div>
                     </div>
                 </div>
@@ -645,13 +650,13 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                     </div>
                     <p class="leading-relaxed text-sm text-burgundy-800/80 mb-6">
                         <strong class="text-burgundy-900 font-serif text-base block mb-2">Luxio by Akzentz</strong>
-                        Un gel 100% pur, inodor și fără solvenți dăunători. Oferă o rezistență de neegalat și un luciu impecabil care durează săptămâni întregi, protejând în același timp unghia ta naturală împotriva ruperii.
+                        <span data-ro="Un gel 100% pur, inodor și fără solvenți dăunători. Oferă o rezistență de neegalat și un luciu impecabil care durează săptămâni întregi, protejând în același timp unghia ta naturală împotriva ruperii." data-ru="100% чистый гель, без запаха и вредных растворителей. Обеспечивает непревзойдённую стойкость и безупречный блеск на несколько недель, защищая натуральный ноготь от ломкости.">Un gel 100% pur, inodor și fără solvenți dăunători. Oferă o rezistență de neegalat și un luciu impecabil care durează săptămâni întregi, protejând în același timp unghia ta naturală împotriva ruperii.</span>
                     </p>
                     <div class="flex gap-3 gap-x-3 gap-y-3 items-center">
                         <div class="flex font-bold text-accent-600 font-serif bg-nude-200 w-10 h-10 border border-nude-300 rounded-full items-center justify-center">L</div>
                         <div class="">
-                            <p class="text-sm font-semibold text-burgundy-900">Sistemul Luxio</p>
-                            <p class="text-[10px] text-burgundy-800/50 uppercase">Manichiură Premium</p>
+                            <p class="text-sm font-semibold text-burgundy-900" data-ro="Sistemul Luxio" data-ru="Система Luxio">Sistemul Luxio</p>
+                            <p class="text-[10px] text-burgundy-800/50 uppercase" data-ro="Manichiură Premium" data-ru="Премиум маникюр">Manichiură Premium</p>
                         </div>
                     </div>
                 </div>
@@ -662,32 +667,32 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <!-- FAQ (Objection Handling) -->
     <section class="py-20 px-6 bg-nude-100 border-t border-nude-200">
         <div class="max-w-3xl mx-auto">
-            <h2 class="font-serif text-3xl text-center text-burgundy-900 mb-12">Întrebări Frecvente</h2>
+            <h2 class="font-serif text-3xl text-center text-burgundy-900 mb-12" data-ro="Întrebări Frecvente" data-ru="Часто задаваемые вопросы">Întrebări Frecvente</h2>
             
             <div class="space-y-6">
                 <!-- Q1 -->
                 <div class="reveal-element">
                     <h3 class="font-semibold text-burgundy-900 mb-2 flex items-center gap-2">
-                        <iconify-icon icon="solar:question-circle-linear" class="text-accent-500" width="18" height="18"></iconify-icon> 
-                        Unde vă găsesc mai exact?
+                        <iconify-icon icon="solar:question-circle-linear" class="text-accent-500" width="18" height="18"></iconify-icon>
+                        <span data-ro="Unde vă găsesc mai exact?" data-ru="Где именно вас найти?">Unde vă găsesc mai exact?</span>
                     </h3>
-                    <p class="text-burgundy-800/70 text-sm pl-7">Ne găsești la parterul Shopping MallDova, în incinta elegantă a Gloss Beauty Studio. Există parcare disponibilă pentru clienți.</p>
+                    <p class="text-burgundy-800/70 text-sm pl-7" data-ro="Ne găsești la nivelul -1 al Shopping MallDova, în incinta elegantă a Gloss Beauty Studio. Există parcare disponibilă pentru clienți." data-ru="Вы найдёте нас на уровне -1 Shopping MallDova, в элегантном Gloss Beauty Studio. Для клиентов доступна парковка.">Ne găsești la nivelul -1 al Shopping MallDova, în incinta elegantă a Gloss Beauty Studio. Există parcare disponibilă pentru clienți.</p>
                 </div>
                 <!-- Q2 -->
                 <div class="reveal-element delay-100">
                     <h3 class="font-semibold text-burgundy-900 mb-2 flex items-center gap-2">
                         <iconify-icon icon="solar:question-circle-linear" class="text-accent-500" width="18" height="18"></iconify-icon>
-                        Este necesară programarea în avans?
+                        <span data-ro="Este necesară programarea în avans?" data-ru="Нужна ли предварительная запись?">Este necesară programarea în avans?</span>
                     </h3>
-                    <p class="text-burgundy-800/70 text-sm pl-7">Da, recomand să mă contactezi cu cel puțin câteva zile înainte. Locurile se ocupă rapid, iar o programare îți garantează ora dorită.</p>
+                    <p class="text-burgundy-800/70 text-sm pl-7" data-ro="Da, recomand să mă contactezi cu cel puțin câteva zile înainte. Locurile se ocupă rapid, iar o programare îți garantează ora dorită." data-ru="Да, рекомендую связаться со мной за несколько дней. Места занимаются быстро, а запись гарантирует нужное время.">Da, recomand să mă contactezi cu cel puțin câteva zile înainte. Locurile se ocupă rapid, iar o programare îți garantează ora dorită.</p>
                 </div>
                 <!-- Q3 -->
                 <div class="reveal-element delay-200">
                     <h3 class="font-semibold text-burgundy-900 mb-2 flex items-center gap-2">
                         <iconify-icon icon="solar:question-circle-linear" class="text-accent-500" width="18" height="18"></iconify-icon>
-                        Ce servicii oferi?
+                        <span data-ro="Ce servicii oferi?" data-ru="Какие услуги вы предлагаете?">Ce servicii oferi?</span>
                     </h3>
-                    <p class="text-burgundy-800/70 text-sm pl-7">Mă ocup de unghii (manichiură, pedichiură, extensii gel), epilare și stilizare sprâncene. Serviciul principal este îngrijirea unghiilor — consultă lista de prețuri pentru toate opțiunile disponibile.</p>
+                    <p class="text-burgundy-800/70 text-sm pl-7" data-ro="Mă ocup de unghii (manichiură, pedichiură, extensii gel), epilare și stilizare sprâncene. Serviciul principal este îngrijirea unghiilor — consultă lista de prețuri pentru toate opțiunile disponibile." data-ru="Я занимаюсь ногтями (маникюр, педикюр, гелевое наращивание), эпиляцией и оформлением бровей. Основная услуга — уход за ногтями. Ознакомьтесь с прейскурантом для всех доступных вариантов.">Mă ocup de unghii (manichiură, pedichiură, extensii gel), epilare și stilizare sprâncene. Serviciul principal este îngrijirea unghiilor — consultă lista de prețuri pentru toate opțiunile disponibile.</p>
                 </div>
             </div>
         </div>
@@ -699,29 +704,29 @@ iconify-icon { display: inline-block; vertical-align: middle; }
         <div class="absolute inset-0 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none"></div>
         
         <div class="relative z-10 max-w-4xl mx-auto text-center text-nude-100">
-            <span class="text-xs font-bold uppercase tracking-[0.2em] opacity-60 mb-4 block reveal-element text-accent-500">Momentul tău de relaxare</span>
-            <h2 class="font-serif text-4xl md:text-5xl mb-6 reveal-element delay-100">Programează-te Acum</h2>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] opacity-60 mb-4 block reveal-element text-accent-500" data-ro="Momentul tău de relaxare" data-ru="Ваш момент отдыха">Momentul tău de relaxare</span>
+            <h2 class="font-serif text-4xl md:text-5xl mb-6 reveal-element delay-100" data-ro="Programează-te Acum" data-ru="Запишитесь сейчас">Programează-te Acum</h2>
             
             <!-- Policy Card -->
             <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl max-w-lg mx-auto mb-12 reveal-element delay-200 shadow-2xl">
                 <div class="flex items-center justify-center gap-2 mb-4 text-accent-500">
                     <iconify-icon icon="solar:info-circle-linear" width="24" height="24"></iconify-icon>
                 </div>
-                <h3 class="font-serif text-xl mb-4 uppercase tracking-widest text-white">Informații Utile</h3>
-                <p class="text-sm opacity-80 mb-6 leading-relaxed">
+                <h3 class="font-serif text-xl mb-4 uppercase tracking-widest text-white" data-ro="Informații Utile" data-ru="Полезная информация">Informații Utile</h3>
+                <p class="text-sm opacity-80 mb-6 leading-relaxed" data-ro="Pentru a-ți asigura locul dorit, te rog să mă contactezi cu câteva zile înainte. Locurile se ocupă rapid." data-ru="Чтобы занять желаемое место, пожалуйста, свяжитесь со мной за несколько дней. Места занимаются быстро.">
                     Pentru a-ți asigura locul dorit, te rog să mă contactezi cu câteva zile înainte. Locurile se ocupă rapid.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left reveal-element delay-300">
                 <div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-                    <h4 class="text-sm uppercase tracking-widest font-bold mb-4 opacity-70 text-accent-500">Contact &amp; Locație</h4>
+                    <h4 class="text-sm uppercase tracking-widest font-bold mb-4 opacity-70 text-accent-500" data-ro="Contact &amp; Locație" data-ru="Контакты &amp; Локация">Contact &amp; Locație</h4>
                     <div class="space-y-3 text-sm text-white/90">
                         <p class="flex items-center gap-3">
                             <iconify-icon icon="solar:phone-calling-linear" width="16" height="16" class="text-accent-500"></iconify-icon> +373 692 41 950
                         </p>
                         <p class="flex items-center gap-3">
-                            <iconify-icon icon="solar:map-point-linear" width="16" height="16" class="text-accent-500"></iconify-icon> Shopping MallDova, Parter
+                            <iconify-icon icon="solar:map-point-linear" width="16" height="16" class="text-accent-500"></iconify-icon> Shopping MallDova, Nivelul -1
                         </p>
                         <p class="flex items-center gap-3">
                             <iconify-icon icon="solar:buildings-2-linear" width="16" height="16" class="text-accent-500"></iconify-icon> Gloss Beauty Studio
@@ -730,12 +735,12 @@ iconify-icon { display: inline-block; vertical-align: middle; }
                 </div>
                 
                 <div class="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10 flex flex-col justify-center text-center hover:bg-white/10 transition-colors">
-                    <p class="text-sm font-medium mb-4 text-white">ALEGE SERVICIUL DORIT</p>
+                    <p class="text-sm font-medium mb-4 text-white" data-ro="ALEGE SERVICIUL DORIT" data-ru="ВЫБЕРИТЕ НУЖНУЮ УСЛУГУ">ALEGE SERVICIUL DORIT</p>
                     <a href="tel:+37369241950" class="uppercase hover:bg-accent-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-xs font-bold text-burgundy-900 tracking-widest bg-accent-500 text-white rounded-full mb-3 pt-3 pr-8 pb-3 pl-8 shadow-xl">
                         <iconify-icon icon="solar:phone-calling-linear" width="16" height="16"></iconify-icon>
-                        SUNĂ ACUM
+                        <span data-ro="SUNĂ ACUM" data-ru="ПОЗВОНИТЬ">SUNĂ ACUM</span>
                     </a>
-                    <p class="text-[10px] opacity-50 text-white">Răspund prompt în timpul orelor de program.</p>
+                    <p class="text-[10px] opacity-50 text-white" data-ro="Răspund prompt în timpul orelor de program." data-ru="Отвечаю оперативно в рабочее время.">Răspund prompt în timpul orelor de program.</p>
                 </div>
             </div>
         </div>
@@ -749,7 +754,7 @@ iconify-icon { display: inline-block; vertical-align: middle; }
             <div class="space-y-2 text-sm text-white/70">
                 <p class="flex items-start gap-2">
                     <iconify-icon icon="solar:map-point-linear" class="mt-1 shrink-0 text-accent-500" width="16" height="16"></iconify-icon>
-                    Shopping MallDova, Parter<br>în incinta Gloss Beauty Studio
+                    Shopping MallDova, Nivelul -1<br>în incinta Gloss Beauty Studio
                 </p>
                 <p class="flex items-center gap-2 mt-2">
                     <iconify-icon icon="solar:phone-calling-linear" width="16" height="16" class="text-accent-500"></iconify-icon>
@@ -768,8 +773,8 @@ iconify-icon { display: inline-block; vertical-align: middle; }
         </div>
     </div>
     <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-[10px] text-white/30 uppercase tracking-widest">
-        © 2026 Maria Nails &amp; Beauty. Toate drepturile rezervate. &nbsp;·&nbsp;
-        <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="underline underline-offset-2 hover:text-white/60 transition-colors">Politică de Confidențialitate</button>
+        <span data-ro="© 2026 Maria Nails &amp; Beauty. Toate drepturile rezervate." data-ru="© 2026 Maria Nails &amp; Beauty. Все права защищены.">© 2026 Maria Nails &amp; Beauty. Toate drepturile rezervate.</span> &nbsp;·&nbsp;
+        <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="underline underline-offset-2 hover:text-white/60 transition-colors" data-ro="Politică de Confidențialitate" data-ru="Политика конфиденциальности">Politică de Confidențialitate</button>
     </div>
 </footer>
 
@@ -810,16 +815,16 @@ iconify-icon { display: inline-block; vertical-align: middle; }
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-40 bg-burgundy-900 border-t border-white/10 px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
         <p class="text-white/80 text-xs leading-relaxed max-w-2xl">
-            Acest site folosește cookies tehnice de la servicii externe (Google Fonts, CDN-uri) pentru funcționarea corectă a paginii. Nu colectăm date personale.
-            <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="underline text-accent-500 hover:text-accent-400 transition-colors">Află mai mult</button>
+            <span data-ro="Acest site folosește cookies tehnice de la servicii externe (Google Fonts, CDN-uri) pentru funcționarea corectă a paginii. Nu colectăm date personale." data-ru="Этот сайт использует технические файлы cookie от внешних сервисов (Google Fonts, CDN) для корректной работы страницы. Мы не собираем персональные данные.">Acest site folosește cookies tehnice de la servicii externe (Google Fonts, CDN-uri) pentru funcționarea corectă a paginii. Nu colectăm date personale.</span>
+            <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="underline text-accent-500 hover:text-accent-400 transition-colors" data-ro="Află mai mult" data-ru="Узнать больше">Află mai mult</button>
         </p>
         <div class="flex gap-3 shrink-0">
             <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookieChoice','declined')"
-                class="border border-white/20 hover:border-white/40 text-white/70 hover:text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors">
+                class="border border-white/20 hover:border-white/40 text-white/70 hover:text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors" data-ro="Refuz" data-ru="Отказать">
                 Refuz
             </button>
             <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookieChoice','accepted')"
-                class="bg-accent-500 hover:bg-accent-600 text-white text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full transition-colors">
+                class="bg-accent-500 hover:bg-accent-600 text-white text-xs font-bold uppercase tracking-wider px-6 py-2.5 rounded-full transition-colors" data-ro="Accept" data-ru="Принять">
                 Accept
             </button>
         </div>
@@ -831,14 +836,14 @@ iconify-icon { display: inline-block; vertical-align: middle; }
             <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="absolute top-4 right-4 text-burgundy-800/40 hover:text-burgundy-800 transition-colors">
                 <iconify-icon icon="solar:close-circle-linear" width="24" height="24"></iconify-icon>
             </button>
-            <h2 class="font-serif text-2xl text-burgundy-900 mb-6">Politică de Confidențialitate</h2>
+            <h2 class="font-serif text-2xl text-burgundy-900 mb-6" data-ro="Politică de Confidențialitate" data-ru="Политика конфиденциальности">Politică de Confidențialitate</h2>
             <div class="space-y-4 text-sm text-burgundy-800/70 leading-relaxed">
-                <p><strong class="text-burgundy-900">Operator:</strong> Maria Nails & Beauty, cu activitate în cadrul Gloss Beauty Studio, Shopping MallDova, Chișinău.</p>
-                <p><strong class="text-burgundy-900">Date colectate:</strong> Acest site nu colectează, nu stochează și nu procesează date personale prin formulare sau conturi de utilizator.</p>
-                <p><strong class="text-burgundy-900">Cookies tehnice:</strong> Site-ul utilizează servicii externe (Google Fonts, Tailwind CDN, Iconify) care pot plasa cookies tehnice necesare pentru afișarea corectă a paginii. Aceste cookies nu sunt folosite în scopuri de marketing sau urmărire.</p>
-                <p><strong class="text-burgundy-900">Contact telefonic:</strong> Dacă ne contactezi la numărul +373 692 41 950, datele furnizate (nume, număr de telefon) sunt folosite exclusiv pentru confirmarea programărilor și nu sunt partajate cu terți.</p>
-                <p><strong class="text-burgundy-900">Drepturile tale:</strong> Conform GDPR, ai dreptul de acces, rectificare și ștergere a datelor. Ne poți contacta la numărul de telefon afișat pe site.</p>
-                <p class="text-burgundy-800/40 text-xs">Ultima actualizare: Martie 2026</p>
+                <p><strong class="text-burgundy-900" data-ro="Operator:" data-ru="Оператор:">Operator:</strong> <span data-ro="Maria Nails &amp; Beauty, cu activitate în cadrul Gloss Beauty Studio, Shopping MallDova, Chișinău." data-ru="Maria Nails &amp; Beauty, осуществляющая деятельность в рамках Gloss Beauty Studio, Shopping MallDova, Кишинёв.">Maria Nails & Beauty, cu activitate în cadrul Gloss Beauty Studio, Shopping MallDova, Chișinău.</span></p>
+                <p><strong class="text-burgundy-900" data-ro="Date colectate:" data-ru="Собираемые данные:">Date colectate:</strong> <span data-ro="Acest site nu colectează, nu stochează și nu procesează date personale prin formulare sau conturi de utilizator." data-ru="Этот сайт не собирает, не хранит и не обрабатывает персональные данные через формы или учётные записи пользователей.">Acest site nu colectează, nu stochează și nu procesează date personale prin formulare sau conturi de utilizator.</span></p>
+                <p><strong class="text-burgundy-900" data-ro="Cookies tehnice:" data-ru="Технические cookie:">Cookies tehnice:</strong> <span data-ro="Site-ul utilizează servicii externe (Google Fonts, Tailwind CDN, Iconify) care pot plasa cookies tehnice necesare pentru afișarea corectă a paginii. Aceste cookies nu sunt folosite în scopuri de marketing sau urmărire." data-ru="Сайт использует внешние сервисы (Google Fonts, Tailwind CDN, Iconify), которые могут размещать технические cookie, необходимые для корректного отображения страницы. Эти cookie не используются в маркетинговых или аналитических целях.">Site-ul utilizează servicii externe (Google Fonts, Tailwind CDN, Iconify) care pot plasa cookies tehnice necesare pentru afișarea corectă a paginii. Aceste cookies nu sunt folosite în scopuri de marketing sau urmărire.</span></p>
+                <p><strong class="text-burgundy-900" data-ro="Contact telefonic:" data-ru="Телефонный контакт:">Contact telefonic:</strong> <span data-ro="Dacă ne contactezi la numărul +373 692 41 950, datele furnizate (nume, număr de telefon) sunt folosite exclusiv pentru confirmarea programărilor și nu sunt partajate cu terți." data-ru="Если вы свяжетесь с нами по номеру +373 692 41 950, предоставленные данные (имя, номер телефона) используются исключительно для подтверждения записей и не передаются третьим лицам.">Dacă ne contactezi la numărul +373 692 41 950, datele furnizate (nume, număr de telefon) sunt folosite exclusiv pentru confirmarea programărilor și nu sunt partajate cu terți.</span></p>
+                <p><strong class="text-burgundy-900" data-ro="Drepturile tale:" data-ru="Ваши права:">Drepturile tale:</strong> <span data-ro="Conform GDPR, ai dreptul de acces, rectificare și ștergere a datelor. Ne poți contacta la numărul de telefon afișat pe site." data-ru="В соответствии с GDPR вы имеете право на доступ, исправление и удаление данных. Вы можете связаться с нами по номеру телефона, указанному на сайте.">Conform GDPR, ai dreptul de acces, rectificare și ștergere a datelor. Ne poți contacta la numărul de telefon afișat pe site.</span></p>
+                <p class="text-burgundy-800/40 text-xs" data-ro="Ultima actualizare: Martie 2026" data-ru="Последнее обновление: Март 2026">Ultima actualizare: Martie 2026</p>
             </div>
         </div>
     </div>
@@ -847,6 +852,27 @@ iconify-icon { display: inline-block; vertical-align: middle; }
         if (localStorage.getItem('cookieChoice')) {
             document.getElementById('cookie-banner').style.display = 'none';
         }
+    </script>
+
+    <script>
+    function setLang(lang) {
+        document.querySelectorAll('[data-ro]').forEach(el => {
+            el.textContent = el.getAttribute('data-' + lang);
+        });
+        // Update active state on buttons
+        document.getElementById('lang-ro').className = lang === 'ro'
+            ? 'px-3 py-1 rounded-full transition-all bg-burgundy-800 text-white'
+            : 'px-3 py-1 rounded-full transition-all text-burgundy-800/50 hover:text-burgundy-800';
+        document.getElementById('lang-ru').className = lang === 'ru'
+            ? 'px-3 py-1 rounded-full transition-all bg-burgundy-800 text-white'
+            : 'px-3 py-1 rounded-full transition-all text-burgundy-800/50 hover:text-burgundy-800';
+        localStorage.setItem('siteLang', lang);
+    }
+    // Restore saved language on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const saved = localStorage.getItem('siteLang');
+        if (saved && saved !== 'ro') setLang(saved);
+    });
     </script>
 
     <!-- Floating WhatsApp Button -->
